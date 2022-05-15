@@ -1,0 +1,7 @@
+*.csv
+.DS_Store
+.terraform/
+.terraform.lock.hcl
+
+airflow_variables.json
+*.txt
