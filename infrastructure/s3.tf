@@ -17,8 +17,8 @@ resource "aws_s3_bucket" "dl" {
 }
 
 
-resource "aws_s3_bucket" "stream" {
-  bucket = "igti-lin-streaming-bucket"
+resource "aws_s3_bucket" "raw-data" {
+  bucket = "igti-lin-raw-data-bucket"
   acl    = "private"
 
   tags = {
