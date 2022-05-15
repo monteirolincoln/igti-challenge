@@ -1,8 +1,8 @@
-resource "aws_s3_bucket_object" "data1" {
+resource "aws_s3_bucket_object" "data2" {
   bucket = aws_s3_bucket.raw-data.id
-  key    = "data/rais_vinc_pub_centro_oeste.csv"
+  key    = "data/rais_vinc_pub_sp.csv"
   acl    = "private"
-  source = "../data/RAIS_VINC_PUB_CENTRO_OESTE.txt"
-  etag   = filemd5("../data/RAIS_VINC_PUB_CENTRO_OESTE.txt")
+  source = "../data/rais_vinc_pub_sp.csv"
+  etag   = filemd5("../data/rais_vinc_pub_sp.csv")
 }
 
